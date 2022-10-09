@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1>Find YOUR Recipe</h1>
-      <Recipe />
+      <Recipe defaultRecipe={"pasta"} />
     </div>
   );
 }
