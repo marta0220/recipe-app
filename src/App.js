@@ -3,7 +3,7 @@ import Recipe from "./Recipe";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container-fluid">
       <h1>Find YOUR Recipe</h1>
       <Recipe defaultRecipe={"pasta"} />
     </div>
