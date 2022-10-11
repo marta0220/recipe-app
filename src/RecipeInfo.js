@@ -3,6 +3,7 @@ import axios from "axios";
 
 import Ingredients from "./Ingredients";
 import Instructions from "./Instructions";
+import Nutrition from "./Nutrition";
 export default function RecipeInfo({ id }) {
   let [notCalled, setNotCalled] = useState(true);
   let [info, setInfo] = useState(null);
@@ -40,6 +41,7 @@ export default function RecipeInfo({ id }) {
               </div>
             );
           })}
+          <Nutrition nutrition={info.nutrition} />
         </div>
       </div>
     );
